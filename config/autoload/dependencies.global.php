@@ -1,7 +1,7 @@
 <?php
 /**
  * @license    https://opensource.org/licenses/BSD-3-Clause New BSD License
- * @Copyright  (c) 2017-2018, jailgreen jukka@jahlgren.eu
+ * @copyright  (c) 2017-2018, jailgreen jukka@jahlgren.eu
  */
 
 declare(strict_types=1);
