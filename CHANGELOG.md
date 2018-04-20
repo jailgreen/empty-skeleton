@@ -2,11 +2,11 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
-## 0.2.0 - 2018-04-15
+## 0.1.0 - TLD
 
 ### Added
 
-- HomePage Middleware.
+- Nothing.
 
 ### Changed
 
