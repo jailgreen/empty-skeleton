@@ -2,7 +2,7 @@
     "name": "jailgreen/empty",
     "description": "Empty zend-expressive 3 starter-kit.",
     "type": "webpage",
-    "homepage": "https://github.com/jailgreen/apod",
+    "homepage": "https://github.com/jailgreen/empty-skeleton",
     "license": "BSD-3-Clause",
     "config": {
         "sort-packages": true
@@ -10,7 +10,6 @@
     "require": {
         "php": "^7.1",
         "ocramius/proxy-manager": "^2.2",
-        "roave/security-advisories": "dev-master",
         "zendframework/zend-config-aggregator": "^1.1",
         "zendframework/zend-diactoros": "^1.7",
         "zendframework/zend-expressive": "^3.0",
@@ -27,6 +26,7 @@
         "phpstan/phpstan": "^0.9.2",
         "phpstan/phpstan-strict-rules": "^0.9.0",
         "phpunit/phpunit": "^7.1",
+        "roave/security-advisories": "dev-master",
         "slevomat/coding-standard": "^4.5",
         "squizlabs/php_codesniffer": "^3.2",
         "zendframework/zend-component-installer": "^2.1",
