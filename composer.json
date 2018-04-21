@@ -9,7 +9,6 @@
     },
     "require": {
         "php": "^7.1",
-        "ocramius/proxy-manager": "^2.2",
         "zendframework/zend-config-aggregator": "^1.1",
         "zendframework/zend-diactoros": "^1.7",
         "zendframework/zend-expressive": "^3.0",
