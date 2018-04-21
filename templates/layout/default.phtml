@@ -28,9 +28,21 @@
   <?=$this->section('css')?>
 
 </head>
-<body>
-  <div class="container">
-    <?=$this->section('content')?>
+
+<body class="text-center">
+
+  <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+      <?php $this->insert('layout::header') ?>
+    </header>
+
+    <main role="main" class="inner cover">
+      <?= $this->section('content') ?>
+    </main>
+
+    <footer class="mastfoot mt-auto">
+      <?php $this->insert('layout::footer') ?>
+    </footer>
   </div>
     
 </body>
