@@ -1,8 +1,20 @@
-<nav class="navbar navbar-light justify-content-between">
+<nav class="navbar navbar-expand-lg navbar-light justify-content-between">
   <div class="container">
-    <h3 class="navbar-brand">Cover</h3>
-    <a class="nav-link active" href="#">Home</a>
-    <a class="nav-link" href="#">Features</a>
-    <a class="nav-link" href="#">Contact</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="<?php $this->url('home.page') ?>">
+        <strong>jahlgren</strong>
+    </a>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <div class="nav">
+        <a class="nav-item nav-link active" href="<?php $this->url('home.page') ?>">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#">Features</a>
+        <a class="nav-item nav-link" href="#">Contact</a>
+      </div>
+    </div>
+
   </div>
 </nav>
