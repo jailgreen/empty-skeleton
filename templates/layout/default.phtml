@@ -35,15 +35,15 @@
 <body>
 
   <div class="app container">
-    <header class="app-header mb-auto">
+    <header class="mb-auto">
       <?php $this->insert('layout::header') ?>
     </header>
 
-    <main role="main" class="inner cover">
+    <main role="main" class="container">
       <?= $this->section('content') ?>
     </main>
 
-    <footer class="mastfoot mt-auto">
+    <footer class="app-footer mt-auto">
       <?php $this->insert('layout::footer') ?>
     </footer>
   </div>
