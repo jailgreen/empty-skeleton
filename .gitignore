@@ -1,5 +1,7 @@
+*.log
 phpunit.xml
 coverage/
 vendor/
 /nbproject/private/
 sites/
+node_modules/

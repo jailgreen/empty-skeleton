@@ -25,14 +25,17 @@
   <!-- Font Awesome CSS -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   <!-- Custom CSS -->
+  <?php $this->start('css') ?>
+  <link rel="stylesheet" href="/css/jahlgren.min.css">
+  <?php $this->stop() ?>
   <?=$this->section('css')?>
 
 </head>
 
 <body class="text-center">
 
-  <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <header class="masthead mb-auto">
+  <div class="app container">
+    <header class="app-header mb-auto">
       <?php $this->insert('layout::header') ?>
     </header>
 
