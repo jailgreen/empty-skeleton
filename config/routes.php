@@ -39,4 +39,5 @@ use Zend\Expressive\MiddlewareFactory;
 
 return function (Application $app, MiddlewareFactory $factory, ContainerInterface $container) : void {
     $app->get('/', App\Handler\HomePage::class, 'home.page');
+    $app->get('/learn', Learn\Handler\CssPage::class, 'css.page');
 };
