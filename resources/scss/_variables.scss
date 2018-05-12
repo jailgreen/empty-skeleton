@@ -3,29 +3,47 @@
 @copyright  (c) 2017-2018, jailgreen jukka@jahlgren.eu
 */
 /*
-    Created on : 30.4.2018, 18:16:56
+    Created on : 1.5.2018, 17:01:24
     Author     : jailgreen jukka@jahlgren.eu
 */
 
-$gray-dark:             #373a3c;
-$gray:                  #55595c;
-$gray-light:            #818a91;
-$gray-lighter:          #eceeef;
-$gray-lightest:         #f7f7f9;
+/*
+ * PostCSS styles to test Rollup’s handling of them.
+ */
 
-$text-color:            $gray-dark;
-$text-color-light:      $gray-light;
-$text-color-lighter:    $gray-lighter;
-$bg-color:              $body-bg;
+/* Variables */
+$color-heading: #111 !default;
+$color-text: #444 !default;
+$color-gradient-start: #efefff !default;
+$color-lightest: #fff !default;
+$font-family: sans-serif !default;
 
-$link-color:            #ff4f00;
+$gray-darkest:          #333 !default;
+$gray-dark:             #373a3c !default;
+$gray:                  #55595c !default;
+$gray-light:            #818a91 !default;
+$gray-lighter:          #eceeef !default;
+$gray-lightest:         #f7f7f9 !default;
 
-$ui-primary:            #ff4f00;
-$ui-secondary:          #5c2040;
+$black:         #000 !default;
+$white:         #fff !default;
+
+$button-color:  $gray-darkest !default;
+$link-color:    $black !default;
+
+$text-color:            $gray-dark !default;
+$text-color-light:      $gray-light !default;
+$text-color-lighter:    $gray-lighter !default;
+$bg-color:              $body-bg !default;
+
+$link-color:            #ff4f00 !default;
+
+$ui-primary:            #ff4f00 !default;
+$ui-secondary:          #5c2040 !default;
 
 //== Background and colors
 //
 //##
-$header-color: #fff;
-$footer-bg:    #0c0c0c;
-$footer-color: #a0a0a0;
+$header-color: #fff !default;
+$footer-bg:    #0c0c0c !default;
+$footer-color: #a0a0a0 !default;

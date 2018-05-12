@@ -8,16 +8,16 @@
 */
 
 .app {
-    display:        flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    min-height:     100vh;
+  //align-items:    center;
+  justify-content: center;
 
-    //align-items:    center;
-    justify-content: center;
+  min-height: 100vh;
+  padding: $spacer;
 
-    margin:         auto;
-    padding:        $spacer;
+  margin: auto;
 }
 
 .nav {
@@ -44,28 +44,28 @@
 }
 
 .app-content {
-    padding: $spacer 0;
 
-    flex: 1;
+  flex: 1;
+  padding: $spacer 0;
 
-    .btn-sm {
-      padding: .75rem 1.25rem;
-      font-weight: 700;
-    }
+  .btn-sm {
+    padding: .75rem 1.25rem;
+    font-weight: 700;
+  }
 }
 
 .app-footer {
-    padding:    $spacer 0;
-    font-size:  .8rem;
+  padding: $spacer 0;
+  font-size: .8rem;
 
-    color:      $footer-color;
-    background: transparent;
+  color: $footer-color;
+  background: transparent;
 
-    a {
-        color:  $footer-color;
-    }
+  a {
+    color: $footer-color;
+  }
 
-    p {
-        margin-bottom: 0;
-    }
+  p {
+    margin-bottom: 0;
+  }
 }
