@@ -12,8 +12,6 @@
  */
 
 /* Variables */
-$color-heading: #111 !default;
-$color-text: #444 !default;
 $color-gradient-start: #efefff !default;
 $color-lightest: #fff !default;
 $font-family: sans-serif !default;
@@ -30,7 +28,6 @@ $white:         #fff !default;
 
 $button-color:  $gray-darkest !default;
 // $link-color:    $black !default;
-
 $text-color:            $gray-dark !default;
 $text-color-light:      $gray-light !default;
 $text-color-lighter:    $gray-lighter !default;
@@ -44,6 +41,6 @@ $ui-secondary:          #5c2040 !default;
 //== Background and colors
 //
 //##
-$header-color: #fff !default;
+$header-color: #111 !default;
 $footer-bg:    #0c0c0c !default;
 $footer-color: #a0a0a0 !default;

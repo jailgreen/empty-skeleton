@@ -10,14 +10,18 @@
 .app {
   display: flex;
   flex-direction: column;
-
   //align-items:    center;
   justify-content: center;
-
   min-height: 100vh;
   padding: $spacer;
-
   margin: auto;
+  // font-family: $font-family;
+}
+
+.app h1,
+.app h2
+{
+  color: $header-color;
 }
 
 .nav {
@@ -51,6 +55,7 @@
   .btn-sm {
     padding: .75rem 1.25rem;
     font-weight: 700;
+    color: $button-color;
   }
 }
 
@@ -67,5 +72,41 @@
 
   p {
     margin-bottom: 0;
+  }
+}
+
+/* Style the JS-generated output. */
+.debug {
+
+  /* Pseudo-elements, like a goddamn boss. */
+  &::before {
+    display: block;
+    font-family: $font-family;
+    font-size: 50%;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    content: "Script Output:";
+  }
+
+  /* This is a nested approach to BEM-style selectors. */
+  &__output {
+    display: block;
+    padding: 1rem;
+    margin-top: .25rem;
+    font-size: 80%;
+    background-color: $color-lightest;
+
+    /* The color() function works thanks to `postcss-cssnext`. */
+    border: 1px solid color($text-color tint(75%));
+  }
+}
+
+.credits {
+  font-size: 75%;
+  color: color($text-color tint(50%));
+  text-align: center;
+
+  a {
+    color: inherit;
   }
 }
