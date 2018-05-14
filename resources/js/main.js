@@ -7,11 +7,15 @@ import $ from 'jquery';
 import answer from 'the-answer';
 
 // Import a couple modules for testing.
+import activate from './modules/menu';
 import { sayHelloTo } from './modules/mod1';
 import addArray from './modules/mod2';
 
 // Print the results on the page.
 $(() => {
+  // Set avtive nav-link
+  activate();
+  
   // Run some functions from our imported modules.
   const result1 = sayHelloTo('Jason');
   const result2 = addArray([1, 2, 3, 4]);

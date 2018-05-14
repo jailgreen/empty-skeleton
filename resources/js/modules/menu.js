@@ -5,10 +5,13 @@
 
 import $ from 'jquery';
 
-const pathname = window.location.pathname
-const template = '.navbar-nav > a[href="' + pathname + '"]'
-const active = $(template)
-
+/**
+ * Sets active menu link.
+ * @returns {void} 
+ */
 export default function () {
-    
+    const active = $(`.nav > a[href="${window.location.pathname}"]`);
+
+    active.addClass('active');
+    $('<span class="sr-only">(current)</span>').appendTo(active);
 }

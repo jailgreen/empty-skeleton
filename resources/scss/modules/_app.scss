@@ -42,8 +42,12 @@
   }
 
   .active {
-    color: $ui-secondary;
-    border-bottom-color: $ui-secondary;
+    color: $ui-primary;
+    border-bottom-color: $ui-primary;
+  }
+
+  .disabled {
+    border: none;
   }
 }
 

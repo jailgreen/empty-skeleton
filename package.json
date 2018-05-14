@@ -9,6 +9,7 @@
     "test": "test"
   },
   "scripts": {
+    "build-all": "npm-run-all css-lint build-css build-js",
     "build-css": "postcss --env 'production' resources/scss/main.scss --output public/css/main.min.css",
     "css": "postcss resources/scss/main.scss --output public/css/main.min.css",
     "css-lint": "stylelint --syntax scss \"resources/scss/**/*.scss\"",
