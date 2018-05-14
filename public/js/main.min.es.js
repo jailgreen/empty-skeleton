@@ -1,0 +1,54 @@
+import $ from 'jquery';
+
+var index = 42;
+
+/* 
+ * @license    https://opensource.org/licenses/BSD-3-Clause New BSD License
+ * @copyright  (c) 2017-2018, jailgreen jukka@jahlgren.eu
+ */
+
+/**
+ * Says hello.
+ * @param  {String} name a name
+ * @return {String}      a greeting for `name`
+ */
+function sayHelloTo(name) {
+  var toSay = "Hello, " + name + "!";
+
+  return toSay;
+}
+
+/* 
+ * @license    https://opensource.org/licenses/BSD-3-Clause New BSD License
+ * @copyright  (c) 2017-2018, jailgreen jukka@jahlgren.eu
+ */
+
+/**
+ * Adds all the values in an array.
+ * @param  {Array} arr an array of numbers
+ * @return {Number}    the sum of all the array values
+ */
+var addArray = function addArray(arr) {
+  var result = arr.reduce(function (a, b) {
+    return a + b;
+  }, 0);
+
+  return result;
+};
+
+/* 
+ * @license    https://opensource.org/licenses/BSD-3-Clause New BSD License
+ * @copyright  (c) 2017-2018, jailgreen jukka@jahlgren.eu
+ */
+
+// Print the results on the page.
+$(function () {
+  // Run some functions from our imported modules.
+  var result1 = sayHelloTo('Jason');
+  var result2 = addArray([1, 2, 3, 4]);
+
+  $('.debug__output').text('sayHelloTo(\'Jason\') => ' + result1 + '\n');
+  $('.debug__output').append('addArray([1, 2, 3, 4]) => ' + result2 + '\n');
+  $('.debug__output').append('And the answer is ' + index);
+});
+//# sourceMappingURL=main.min.es.js.map

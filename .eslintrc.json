@@ -5,6 +5,7 @@
     },
     "extends": "eslint:recommended",
     "parserOptions": {
+        "ecmaVersion": 6,
         "sourceType": "module"
     },
     "rules": {
@@ -250,7 +251,7 @@
         "require-await": "error",
         "require-jsdoc": "error",
         "rest-spread-spacing": "error",
-        "semi": "off",
+        "semi": "error",
         "semi-spacing": "error",
         "semi-style": [
             "error",

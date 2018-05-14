@@ -2,7 +2,8 @@
   "name": "empty-skeleton",
   "version": "1.0.0",
   "description": "Description",
-  "main": "index.js",
+  "main": "public/js/main.min.js",
+  "module": "public/js/main.min.es.js",
   "style": "resources/scss/main.scss",
   "directories": {
     "test": "test"
@@ -14,7 +15,8 @@
     "css-compile": "node-sass --include-path node_modules/ --output-style expanded --source-map true --source-map-contents true --precision 6 resources/scss/main.scss data/build/main.scss",
     "css-prefix": "postcss data/build/main.scss --use postcss-cssnext --parser postcss-scss -m -o data/build/main.css",
     "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output public/css/main.min.css data/build/main.css",
-    "js": "rollup --config",
+    "js": "rollup --config --environment BUILD:development",
+    "build-js": "rollup --config",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -32,6 +34,7 @@
     "bootstrap": "^4.1.1",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.3",
+    "the-answer": "^1.0.0",
     "tooltip.js": "^1.2.0"
   },
   "devDependencies": {
@@ -52,6 +55,8 @@
     "rollup": "^0.58.2",
     "rollup-plugin-babel": "^3.0.4",
     "rollup-plugin-eslint": "^4.0.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify": "^3.0.0",
     "stylelint": "^9.2.0",
     "stylelint-config-recommended-scss": "^3.2.0",
     "stylelint-config-standard": "^18.2.0",
